@@ -35,7 +35,7 @@ st.markdown(
 # --------------------------------------------------
 @st.cache_resource
 def load_models():
-    with open("model/train_models.pkl", "rb") as f:
+    with open("model/train_models.py", "rb") as f:
         models, scaler = pickle.load(f)
     return models, scaler
 
